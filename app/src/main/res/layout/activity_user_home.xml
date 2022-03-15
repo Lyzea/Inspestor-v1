@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Userhome.UserHome"
+    android:orientation="vertical"
+    android:background="@color/milky">
+
+<!--drawer menu navigation-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+<!--the ic-menu is added from the vector asset-->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_menu" />
+    </RelativeLayout>
+
+<!--    header/title-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/be_vietnam"
+            android:text="@string/application"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+<!-- search bar-->
+<!-- elevation=shadow-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="">
+        </TextView>
+    </RelativeLayout>
+
+<!--    camera button-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <ImageButton
+            android:id="@+id/camera"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_camera"/>
+
+    </RelativeLayout>
+
+<!--    major insects-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+        </TextView>
+    </RelativeLayout>
+<!--    pesticide library-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+        </TextView>
+    </RelativeLayout>
+</LinearLayout>
